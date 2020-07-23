@@ -1,6 +1,6 @@
-'use strict';
-
 //Exercise 2: The even/odd reporter
+
+'use strict';
 
 for (let i = 0; i < 21; i++) {
     // more statements
