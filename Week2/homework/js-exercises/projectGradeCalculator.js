@@ -27,7 +27,7 @@
 
 function gradeCalc(grade) {
     //Second step: convert the score into percentage. The toLocaleString() method converts the score to a percentage representation of the number, and then returns its value as a string.
-      var num= grade;
+      var num= Math.round(grade);
       var s = Number(num/100).toLocaleString(undefined,{style: 'percent', maximumFractionDigits:0}); 
       //return s; make sure var s is returning the score as a percentage. 
 
@@ -52,34 +52,10 @@ function gradeCalc(grade) {
       } else {
           return `You got an ${f} (${s})!`
       }
-
-
-      
-      // I tried to use a switch statement instead but the template literal didn't work. The percentage is correct but all the cases are printing F by default.
-      /* switch (grade) {
-        case grade <= 100 && grade >= 90:
-          return `You got and ${a} (${s})!`
-          break;
-        case grade <= 89 && grade >= 80:
-          return `You got a ${b} (${s})!`
-          break;
-        case grade <= 79 && grade >= 70:
-          return `You got a ${c} (${s})!`
-          break;
-        case grade <= 69 && grade >= 60:
-          return `You got a ${d} (${s})!`
-          break;
-        case grade <= 59 && grade >= 50:
-          return `You got an ${e} (${s})!`
-          break;
-        default:
-          return `You got an ${f} (${s})!`
-          break;
-        }*/
         
     }
   
-  console.log(gradeCalc(100));
+  console.log(gradeCalc(80.5));
   
 
    
