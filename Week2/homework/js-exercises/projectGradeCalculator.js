@@ -55,7 +55,7 @@ function gradeCalc(grade) {
         
     }
   
-  console.log(gradeCalc(80.5));
+  console.log(gradeCalc(80.3));
   
 
    
