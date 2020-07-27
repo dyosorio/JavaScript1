@@ -19,12 +19,33 @@
 //Log to the console: "Hey guys, I brought a [INSERT VALUES FROM ARRAY]!" (For example: "Hey guys, I brought a cola, cola, lemonade, lemonade, water!")
 //Test out your code using node in the command line!
 
-let drinkTray = ['cola', 'lemonade', 'water'];
 
-for (let i = 0; i < 5; i++) {
-    // Runs 5 times, with values of step 0 through 4.
-    drinkTray.push(drinkTray[i]);
-    if (drinkTray.length === 5){
-        console.log('Hey guys, I brought ' + drinkTray + '!');
+let drinkTray = [];
+const drinkTypes = ['cola', 'lemonade', 'water'];
+
+function bringDrinks(arr) {
+    for (let i = 0; i < 2; i++) {
+        drinkTray.push(drinkTypes[0]) // cola + cola, cola
     }
-  }
+
+    for (let i = 1; i < 3; i++) {
+        drinkTray.push(drinkTypes[1]); //cola, cola, + lemonade, lemonade
+    }
+
+    for (let i = 2; i < 4; i++) {
+        drinkTray.push(drinkTypes[2]); //cola, cola, lemonade, lemonade + water, water
+    }
+
+    if (drinkTray.length === 6) { //drop the last item
+        drinkTray.pop();
+        console.log(`Hey guys, I brought a ${drinkTray}!`);
+    }
+
+}
+
+bringDrinks();
+
+
+
+
+
