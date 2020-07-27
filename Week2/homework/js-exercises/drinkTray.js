@@ -22,30 +22,34 @@
 
 let drinkTray = [];
 const drinkTypes = ['cola', 'lemonade', 'water'];
+let drink1 = drinkTypes[0];
 
 function bringDrinks(arr) {
+
+   
+    drinkTray.push(drinkTypes[0]) // cola + cola, cola
+}
+
+for (let i = 1; i < 2; i++) {
+
     for (let i = 0; i < 2; i++) {
-        drinkTray.push(drinkTypes[0]) // cola + cola, cola
+        drinkTray.push(drinkTypes[0]) // cola // cola, cola
     }
 
     for (let i = 1; i < 3; i++) {
-        drinkTray.push(drinkTypes[1]); //cola, cola, + lemonade, lemonade
+        drinkTray.push(drinkTypes[1]); //cola, cola, lemonade // cola, cola, lemonade, lemonade
     }
 
     for (let i = 2; i < 4; i++) {
-        drinkTray.push(drinkTypes[2]); //cola, cola, lemonade, lemonade + water, water
+        drinkTray.push(drinkTypes[2]); //cola, cola, lemonade, lemonade, water...
     }
 
-    if (drinkTray.length === 6) { //drop the last item
+    if (drinkTray.length > 5) { //drop the last item
         drinkTray.pop();
         console.log(`Hey guys, I brought a ${drinkTray}!`);
     }
-
 }
 
 bringDrinks();
-
-
-
 
 
