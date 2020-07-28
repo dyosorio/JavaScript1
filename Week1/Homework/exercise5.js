@@ -10,7 +10,7 @@ console.log(a);
 let highestValue;
 
 if (a > z) {
-    console.log(highestValue = a);
+    console.log(a);
   } else {
-      console.log(highestValue = z);
+      console.log(z);
   }
