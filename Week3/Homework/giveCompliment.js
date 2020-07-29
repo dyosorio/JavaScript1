@@ -8,14 +8,14 @@ Inside the function define a variable that holds an array, compliments, with 10 
 Write code that randomly selects a compliment
 Return a string: "You are [COMPLIMENT], [YOUR_NAME]!*/
 
-function giveCompliment(name) {
+function giveCompliment(name = 'Pumpkin pie') {//use default parameter 
 
     const compliments = [
         'awesome',
         'inspiring',
         'smart',
         'brave',
-        'charming',
+        'charm',
         'strong',
         'wonderful',
         'one of a kind',
