@@ -8,7 +8,7 @@
 //Return a string: "Your doggie is [CALCULATED_VALUE] years old in dog years!"
 
 
-function calculateDogAge(age) {
+const calculateDogAge = age => {
     let dogAge = age * 7;
 
     return `Your doggie is ${dogAge} years old in dog years!`
