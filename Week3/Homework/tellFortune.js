@@ -9,10 +9,10 @@
 //Return a string: "You will be a [JOB_TITLE] in [LOCATION], married to [PARTNER_NAME] with [NUMBER_KIDS] kids."
 //Call the function 3 times, by passing the arrays as the argument.
 
-const numChildren = [0, 1, 2, 3, 6];
+const numChildren = [0, 2, 3, 4, 6];
 const partnerNames = ['Harry Potter', 'Honey Bunny', 'Bilbo Baggins', 'Cersei Lannister'];
 const futureLocations = ['Amsterdam', 'Hogsmeade', 'The Shire', 'King\'s Landing'];
-const futureJobs = ['web developer', 'fortune teller', 'hand of que queen', 'professor'];
+const futureJobs = ['Web developer', 'Fortune teller', 'Hand of the queen', 'Professor'];
 
 function tellFortune(arrJob, arrLocation, arrPartner, arrChildren) {
     
@@ -20,11 +20,7 @@ function tellFortune(arrJob, arrLocation, arrPartner, arrChildren) {
     const randomLocation = arrLocation[Math.floor(Math.random() * arrLocation.length)];
     const randomPartner = arrPartner[Math.floor(Math.random() * arrPartner.length)];
     const randomChildren = arrChildren[Math.floor(Math.random() * arrChildren.length)];
-    //const randomLocation = location[Math.floor(Math.random() * location.length)];
-
-    //return randomJob + randomLocation
-
-    
+    //random = arr[Math.floor(Math.random() * arr.length)]; to select a random value out of any of the array indexes.
 
     console.log(`"You will be a ${randomJob} in ${randomLocation}, married to ${randomPartner} with ${randomChildren} kids."`)
 }
